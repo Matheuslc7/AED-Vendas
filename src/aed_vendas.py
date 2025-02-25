@@ -71,4 +71,4 @@ if df is not None:
     plt.savefig("images/top_referencias_valor.png")
     plt.show()
 
-    print("\nAnálise Exploratória de Dados concluída. Veja os gráficos na pasta 'images'.")
+    print("\n Análise Exploratória de Dados concluída. Veja os gráficos na pasta 'images'.")
