@@ -15,6 +15,14 @@ def load_data():
 df = load_data()
 
 if df is not None:
+    # Estatísticas básicas
+    print("\nResumo estatístico:")
+    print(df.describe())
+
+    # Verificando valores ausentes
+    print("\nValores ausentes:")
+    print(df.isnull().sum())
+
     # Analisando os clientes que mais compraram - Quantidade
     top_clientes_qtd = df.groupby("Cliente")["Quantidade"].sum().sort_values(ascending=False).head(10)
     plt.figure(figsize=(12, 6))
