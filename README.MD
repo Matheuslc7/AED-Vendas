@@ -27,61 +27,80 @@ Para rodar este projeto, você precisará ter o Python instalado, junto com as b
 ```bash
 git clone https://github.com/seu-usuario/analise-vendas.git
 cd analise-vendas
+```
 
 ### 2. Criar um ambiente virtual (opcional, mas recomendado)
-    python -m venv venv
-    source venv/bin/activate  # No Linux/MacOS
-    venv\Scripts\activate     # No Windows
+
+```bash
+python -m venv venv
+source venv/bin/activate  # No Linux/MacOS
+venv\Scripts\activate     # No Windows
+```
 
 ### 3. Instalar as dependências
-    pip install -r requirements.txt
+
+Instale as bibliotecas necessárias usando o `pip`:
+
+```bash
+pip install -r requirements.txt
+```
+
 Ou, se preferir instalar manualmente:
-    pip install pandas matplotlib seaborn openpyxl
+
+```bash
+pip install pandas matplotlib seaborn openpyxl
+```
 
 ### 4. Estrutura de Arquivos
-    analise-vendas/
-    ├── data_input/
-    │   └── vendas.xlsx
-    ├── images/
-    │   └── [gráficos gerados]
-    ├── script.py
-    ├── requirements.txt
-    └── README.md
+
+O projeto espera que você coloque o arquivo de dados `vendas.xlsx` dentro da pasta `data_input/`. Certifique-se de que o arquivo de vendas esteja presente no local correto para que o código funcione.
+
+```plaintext
+analise-vendas/
+├── data_input/
+│   └── vendas.xlsx
+├── images/
+│   └── [gráficos gerados]
+├── script.py
+├── requirements.txt
+└── README.md
+```
 
 ## Como Executar
-### 1. Coloque o arquivo vendas.xlsx com os dados de vendas dentro da pasta data_input/.
-### 2. Execute o script Python para realizar a análise e gerar os gráficos:
-    python script.py
 
-Os gráficos gerados serão salvos na pasta images/ como arquivos PNG, com os seguintes nomes:
-top_clientes_quantidade.png
-top_clientes_valor.png
-top_referencias_quantidade.png
-top_referencias_valor.png
+1. Coloque o arquivo `vendas.xlsx` com os dados de vendas dentro da pasta `data_input/`.
+2. Execute o script Python para realizar a análise e gerar os gráficos:
+
+```bash
+python script.py
+```
+
+Os gráficos gerados serão salvos na pasta `images/` como arquivos PNG, com os seguintes nomes:
+
+- `top_clientes_quantidade.png`
+- `top_clientes_valor.png`
+- `top_referencias_quantidade.png`
+- `top_referencias_valor.png`
 
 ## Resultados Esperados
+
 Após a execução do código, você verá os seguintes resultados:
 
-Gráficos de Análise dos Clientes:
-Top 10 clientes que mais compraram (quantidade e valor total).
-Gráficos de Análise das Referências:
-Top 10 referências mais vendidas (quantidade e valor total).
-Esses gráficos serão salvos na pasta images/ para visualização.
+- **Gráficos de Análise dos Clientes:**
+  - Top 10 clientes que mais compraram (quantidade e valor total).
+  
+- **Gráficos de Análise das Referências:**
+  - Top 10 referências mais vendidas (quantidade e valor total).
+  
+Esses gráficos serão salvos na pasta `images/` para visualização.
 
 ## Contribuindo
-Faça um fork deste repositório.
-Crie uma branch para sua feature (git checkout -b minha-feature).
-Faça as alterações necessárias.
-Envie um pull request para este repositório.
+
+1. Faça um fork deste repositório.
+2. Crie uma branch para sua feature (`git checkout -b minha-feature`).
+3. Faça as alterações necessárias.
+4. Envie um pull request para este repositório.
 
 ## Contato
-Se você tiver alguma dúvida ou sugestão, sinta-se à vontade para abrir uma issue ou entrar em contato.
 
-
-### Algumas observações sobre o `README.md`:
-- **Instruções de instalação**: O arquivo fornece um passo a passo sobre como configurar o ambiente, instalar dependências e rodar o código.
-- **Estrutura de diretórios**: Uma explicação sobre a estrutura de arquivos e pastas do projeto.
-- **Descrição dos gráficos**: Fica claro o que o usuário pode esperar ao executar o script, incluindo os gráficos gerados.
-- **Contribuição**: Como contribuir para o projeto.
-
-Esse modelo pode ser ajustado conforme necessário, dependendo de detalhes específicos do seu projeto, como a forma de manipulação dos dados ou detalhes sobre a análise realizada.
+Se você tiver alguma dúvida ou sugestão, sinta-se à vontade para abrir uma *issue* ou entrar em contato.
