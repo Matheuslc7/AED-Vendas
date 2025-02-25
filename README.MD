@@ -63,6 +63,7 @@ analise-vendas/
 │   └── [gráficos gerados]
 ├── src/
 │   └── aed_vendas.py
+|   └── aed_vendas.ipynb
 ├── requirements.txt
 └── README.md
 ```
