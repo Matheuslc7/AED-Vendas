@@ -7,15 +7,11 @@ Este repositório contém um projeto de análise de dados de vendas, onde são r
 - Análise das referências mais vendidas, com foco em quantidade e valor total.
 
 ## Funcionalidades
-
-1. **Análise Estatística Descritiva:**
-   - Resumo das principais estatísticas sobre os dados (média, desvio padrão, valores mínimo e máximo, etc.).
-   - Identificação de valores ausentes.
    
-2. **Análise de Clientes:**
+1. **Análise de Clientes:**
    - Geração de gráficos sobre os 10 clientes que mais compraram, tanto em termos de quantidade quanto de valor total.
 
-3. **Análise de Referências:**
+2. **Análise de Referências:**
    - Geração de gráficos sobre as 10 referências mais vendidas, tanto em termos de quantidade quanto de valor total.
 
 ## Pré-requisitos
