@@ -61,7 +61,8 @@ analise-vendas/
 │   └── vendas.xlsx
 ├── images/
 │   └── [gráficos gerados]
-├── script.py
+├── src/
+│   └── aed_vendas.py
 ├── requirements.txt
 └── README.md
 ```
@@ -72,7 +73,7 @@ analise-vendas/
 2. Execute o script Python para realizar a análise e gerar os gráficos:
 
 ```bash
-python script.py
+python aed_vendas.py
 ```
 
 Os gráficos gerados serão salvos na pasta `images/` como arquivos PNG, com os seguintes nomes:
