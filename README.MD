@@ -57,14 +57,16 @@ O projeto espera que você coloque o arquivo de dados `vendas.xlsx` dentro da pa
 
 ```plaintext
 analise-vendas/
-├── data_input/
-│   └── vendas.xlsx
-├── images/
-│   └── [gráficos gerados]
-├── src/
-│   └── aed_vendas.py
-|   └── aed_vendas.ipynb
-├── requirements.txt
+ ├── data_input/
+ │   └── vendas.xlsx
+ ├── images/
+ │   └── [gráficos gerados]
+ ├── src/
+ |   └── aed_vendas.ipynb
+ │   └── processing.py
+ |   └── plotting.ipynb
+└── main.py
+└── requirements.txt
 └── README.md
 ```
 
@@ -74,7 +76,7 @@ analise-vendas/
 2. Execute o script Python para realizar a análise e gerar os gráficos:
 
 ```bash
-python aed_vendas.py
+python main.py
 ```
 
 Os gráficos gerados serão salvos na pasta `images/` como arquivos PNG, com os seguintes nomes:
