@@ -21,8 +21,7 @@ Para rodar este projeto, você precisará ter o Python instalado, junto com as b
 ### 1. Clonar o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/analise-vendas.git
-cd analise-vendas
+git clone https://github.com/Matheuslc7/AED-Vendas
 ```
 
 ### 2. Criar um ambiente virtual (opcional, mas recomendado)
