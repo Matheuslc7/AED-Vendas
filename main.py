@@ -1,3 +1,8 @@
+import sys
+import os
+
+sys.path.append(os.path.abspath("src"))
+
 from processing import load_data
 from plotting import (
     plot_top_clientes_quantidade,
