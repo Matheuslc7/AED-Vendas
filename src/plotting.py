@@ -15,6 +15,7 @@ def plot_top_clientes_quantidade(df):
     plt.xticks(rotation=45)
     for p in ax.patches:
         ax.annotate(f'{p.get_height():,.0f}', (p.get_x() + p.get_width() / 2, p.get_height()), ha='center', va='bottom', fontsize=10, color='black')
+    plt.savefig("images/top_clientes_quantidade.png")
     plt.show()
 
 #Function of viewing the main customers by value
@@ -29,6 +30,7 @@ def plot_top_clientes_valor(df):
     plt.xticks(rotation=45)
     for p in ax.patches:
         ax.annotate(f'R$ {p.get_height():,.2f}', (p.get_x() + p.get_width() / 2, p.get_height()), ha='center', va='bottom', fontsize=10, color='black')
+    plt.savefig("images/top_clientes_valores.png")
     plt.show()
 
 #Function of the main references by quantity solddef plot_top_ref_quantidade(df):
