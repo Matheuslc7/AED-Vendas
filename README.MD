@@ -7,15 +7,11 @@ Este repositório contém um projeto de análise de dados de vendas, onde são r
 - Análise das referências mais vendidas, com foco em quantidade e valor total.
 
 ## Funcionalidades
-
-1. **Análise Estatística Descritiva:**
-   - Resumo das principais estatísticas sobre os dados (média, desvio padrão, valores mínimo e máximo, etc.).
-   - Identificação de valores ausentes.
    
-2. **Análise de Clientes:**
+1. **Análise de Clientes:**
    - Geração de gráficos sobre os 10 clientes que mais compraram, tanto em termos de quantidade quanto de valor total.
 
-3. **Análise de Referências:**
+2. **Análise de Referências:**
    - Geração de gráficos sobre as 10 referências mais vendidas, tanto em termos de quantidade quanto de valor total.
 
 ## Pré-requisitos
@@ -25,8 +21,7 @@ Para rodar este projeto, você precisará ter o Python instalado, junto com as b
 ### 1. Clonar o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/analise-vendas.git
-cd analise-vendas
+git clone https://github.com/Matheuslc7/AED-Vendas
 ```
 
 ### 2. Criar um ambiente virtual (opcional, mas recomendado)
@@ -57,14 +52,16 @@ O projeto espera que você coloque o arquivo de dados `vendas.xlsx` dentro da pa
 
 ```plaintext
 analise-vendas/
-├── data_input/
-│   └── vendas.xlsx
-├── images/
-│   └── [gráficos gerados]
-├── src/
-│   └── aed_vendas.py
-|   └── aed_vendas.ipynb
-├── requirements.txt
+ ├── data_input/
+ │   └── vendas.xlsx
+ ├── images/
+ │   └── [gráficos gerados]
+ ├── src/
+ |   └── aed_vendas.ipynb
+ │   └── processing.py
+ |   └── plotting.ipynb
+└── main.py
+└── requirements.txt
 └── README.md
 ```
 
@@ -74,7 +71,7 @@ analise-vendas/
 2. Execute o script Python para realizar a análise e gerar os gráficos:
 
 ```bash
-python aed_vendas.py
+python main.py
 ```
 
 Os gráficos gerados serão salvos na pasta `images/` como arquivos PNG, com os seguintes nomes:
